@@ -1,6 +1,14 @@
 {
   "dependencies": {
     "@trpc/client": "^11.3.1",
-    "@trpc/server": "^11.3.1"
+    "@trpc/server": "^11.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   }
 }
