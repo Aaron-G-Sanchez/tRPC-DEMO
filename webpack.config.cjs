@@ -18,10 +18,14 @@ module.exports = {
   entry: './src/CLIENT/index.ts',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist/', 'CLIENT')
+    path: path.resolve(__dirname, 'dist/', 'CLIENT'),
+    publicPath: '/'
   },
   devServer: {
-    static: path.resolve(__dirname, 'dist/', 'CLIENT'),
+    static: {
+      directory: path.resolve(__dirname, 'public'),
+      publicPath: '/'
+    },
     port: 3000
   }
 }
